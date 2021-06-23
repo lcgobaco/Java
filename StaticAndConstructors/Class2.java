@@ -1,32 +1,18 @@
-public class Class3 extends Parent1 {
-    //public Class1() {
+package StaticAndConstructors;
+
+public class Class2 {
+    //public StaticAndConstructors.Class1() {
     //    System.out.println("Inside no-are Constructor");
     //}
     String instanceName = "";
     static String staticName = "";
-    Class3 childClass = null;
-    static Class3 staticChildClass = null;
+    Class2 childClass = null;
 
-    public Class3() {
-
-    }
-
-    public Class3(String name) {
-        System.out.println("Hello "+name);
-        this.instanceName = name;
-        //Class1.staticName = name;
-
-    }
-
-    public Class3(Class3 childClass, String name) {
-        this.childClass = childClass;
-        this.instanceName = name;
-    }
 
     public static String staticMethod() {
 
         //this.instanceMethod();
-        return "Class1 static method " + staticName;
+        return "StaticAndConstructors.Class2 static method " + staticName;
     }
 
     public String instanceMethod() {
@@ -34,7 +20,7 @@ public class Class3 extends Parent1 {
         if (childClass != null) {
             result = childClass.instanceMethod() + "; ";
         }
-        result += "Class1 instance method " + instanceName;
+        result += "StaticAndConstructors.Class2 instance method " + instanceName;
         return result;
     }
 
@@ -47,9 +33,10 @@ public class Class3 extends Parent1 {
         staticMethod();
     }
 
-    public static void main2(String[] args) {
+    public static void main(String[] args) {
 
     }
+
 }
 
 /*
@@ -58,4 +45,6 @@ public class Class3 extends Parent1 {
 
 Can you call instance1 from instance2?
 
+if you don't define a constructor, a no-args Constructor is created for you.
+but once you create a constrcutor, the no-args Constructor would not be created for you.
  */

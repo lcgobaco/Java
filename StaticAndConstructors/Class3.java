@@ -1,19 +1,26 @@
-public class Class1 {
-    //public Class1() {
+package StaticAndConstructors;
+
+public class Class3 {
+    //public StaticAndConstructors.Class1() {
     //    System.out.println("Inside no-are Constructor");
     //}
     String instanceName = "";
     static String staticName = "";
-    Class1 childClass = null;
+    Class3 childClass = null;
+    static Class3 staticChildClass = null;
 
-    public Class1(String name) {
-        System.out.println("Hello "+name);
-        this.instanceName = name;
-        //Class1.staticName = name;
+    public Class3() {
 
     }
 
-    public Class1(Class1 childClass, String name) {
+    public Class3(String name) {
+        System.out.println("Hello "+name);
+        this.instanceName = name;
+        //StaticAndConstructors.Class1.staticName = name;
+
+    }
+
+    public Class3(Class3 childClass, String name) {
         this.childClass = childClass;
         this.instanceName = name;
     }
@@ -21,7 +28,7 @@ public class Class1 {
     public static String staticMethod() {
 
         //this.instanceMethod();
-        return "Class1 static method " + staticName;
+        return "StaticAndConstructors.Class1 static method " + staticName;
     }
 
     public String instanceMethod() {
@@ -29,7 +36,7 @@ public class Class1 {
         if (childClass != null) {
             result = childClass.instanceMethod() + "; ";
         }
-        result += "Class1 instance method " + instanceName;
+        result += "StaticAndConstructors.Class1 instance method " + instanceName;
         return result;
     }
 
