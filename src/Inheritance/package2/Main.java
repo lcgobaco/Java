@@ -14,6 +14,6 @@ public class Main {
     Public > Protected > Package > Private
 
     Package = same package
-    Protected = same package + Subclass/Child
+    Protected = same package + Subclass/Child in different package
      */
 }
