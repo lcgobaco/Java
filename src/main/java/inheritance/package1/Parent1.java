@@ -1,4 +1,4 @@
-package Inheritance.package1;
+package inheritance.package1;
 
 public class Parent1 {
     String parent1PackageInstanceMethod()

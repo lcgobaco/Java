@@ -1,4 +1,4 @@
-package Inheritance.package1;
+package inheritance.package1;
 
 public class Cousin1 {
     public void test() {

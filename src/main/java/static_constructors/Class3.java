@@ -1,4 +1,4 @@
-package StaticAndConstructors;
+package static_constructors;
 
 public class Class3 {
     //public src.StaticAndConstructors.Class1() {

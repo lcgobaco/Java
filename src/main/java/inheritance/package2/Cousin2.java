@@ -1,6 +1,6 @@
-package Inheritance.package2;
+package inheritance.package2;
 
-import Inheritance.package1.Parent1;
+import inheritance.package1.Parent1;
 
 // Different package non-subclass
 public class Cousin2 {
