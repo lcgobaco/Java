@@ -1,7 +1,5 @@
 package abstracts;
 
-import javax.swing.plaf.synth.SynthTextAreaUI;
-
 public class Main {
     public static void main(String[] args) {
         AbstractClass1 abstractClass1 = new AbstractClass1() {
