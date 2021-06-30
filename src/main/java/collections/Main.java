@@ -69,5 +69,7 @@ public class Main {
         for (String k: hashMap.keySet()) {
             System.out.println(k+":"+hashMap.get(k));
         }
+
+        hashMap.size();
     }
 }
