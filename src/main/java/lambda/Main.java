@@ -11,8 +11,19 @@ public class Main {
             return a + b;
             }
             );
-        Integer difference = display(3, 4, (a, b) -> {return a - b;});
-        Integer product = display(3, 4, (a, b) -> {return a * b;});
+        Integer difference = display(3, 4, (m, n) -> {return m - n;});
+        /*
+                Integer operate(Integer m, Integer n) {
+                    return  m - n;
+                }
+         */
+
+        Integer product = display(3, 4, (m, n) -> {return m * n;});
+        /*
+                Integer operate(Integer m, Integer n) {
+                    return  m * n;
+                }
+         */
         System.out.println(sum);
         System.out.println(difference);
         System.out.println(product);
