@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -25,6 +26,13 @@ public class Main {
         nameList.add(new Name("Audrey", "Gobaco"));
         nameList.add(new Name("Michael", "Gobaco"));
         nameList.add(new Name("Grace", "Gobaco"));
+
+        List<String> firstNames =
+                nameList.stream().map(Name::getFirstName).collect(Collectors.toList());
+
+        firstNames.stream().forEach((e) -> {
+            System.out.println("Using collector:"+e);
+        });
 
         OneParameter mapFunction = (e) -> {
             return e.getFirstName();
