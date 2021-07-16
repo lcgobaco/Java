@@ -27,6 +27,10 @@ public class Main {
 
        for (Method m: c3.getDeclaredMethods()) {
            System.out.println("6:" +m);
+           for (Annotation a: m.getDeclaredAnnotations()) {
+               System.out.println("6.1:" +a);
+
+           }
        }
 
         for (Field m: c3.getDeclaredFields()) {
@@ -34,7 +38,7 @@ public class Main {
             System.out.println("7.1:" +m.getDeclaringClass());
         }
 
-        for (Annotation m: c3.getDeclaredAnnotations()) {
+        for (Annotation m: Class1.class.getAnnotations()) {
             System.out.println("8:" +m);
         }
 

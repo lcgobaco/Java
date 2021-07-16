@@ -11,7 +11,7 @@ public class Main {
 
     /*
     Access Modified in Java
-    Public > Protected > Package > Private
+    Public > Protected > Package (default) > Private
 
     Package = same package
     Protected = same package + Subclass/Child in different package
