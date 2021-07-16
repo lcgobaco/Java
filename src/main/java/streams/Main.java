@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -34,13 +35,11 @@ public class Main {
             System.out.println("Using collector:"+e);
         });
 
-        OneParameter mapFunction = (e) -> {
+        Function<Name, String> mapFunction = (e) -> {
             return e.getFirstName();
         };
 
-        nameList.stream().map((e) -> {
-            return e.getFirstName();
-        })
+        nameList.stream().map(mapFunction)
                 .forEach((e) -> {
                     System.out.println("Stream Map:" + e);
                 });
