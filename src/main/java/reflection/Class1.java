@@ -16,14 +16,18 @@ public class Class1 extends SuperClass1{
         return 0;
     }
 
+    @Deprecated
+    @Annotation1
     private int m2(int b) {
         return 0;
     }
 
+    @Annotation1
     public static int m3(int c) {
         return 0;
     }
 
+    @Annotation1
     private static int m4(int d) {
         return 0;
     }
