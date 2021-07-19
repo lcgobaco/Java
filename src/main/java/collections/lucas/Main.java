@@ -15,5 +15,8 @@ public class Main {
         integerSinglyLinkedList.add(3);
 
         System.out.println(integerSinglyLinkedList);
+
+        System.out.println(stringSinglyLinkedList.contains("A"));
+        System.out.println(stringSinglyLinkedList.contains("D"));
     }
 }

@@ -25,8 +25,19 @@ public class SinglyLinkedList<T> {
         }
         return result;
     }
+
     public static void main(String args[]) {
     }
 
-
+    public Boolean contains(String a) {
+        Node walk = head;
+        Boolean result = false;
+        while (walk != null) {
+            if (walk.value == a) {
+                result = true;
+            }
+            walk = walk.next;
+        }
+        return result;
+    }
 }
