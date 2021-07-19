@@ -31,13 +31,12 @@ public class SinglyLinkedList<T> {
 
     public Boolean contains(String a) {
         Node walk = head;
-        Boolean result = false;
         while (walk != null) {
             if (walk.value == a) {
-                result = true;
+                return true;
             }
             walk = walk.next;
         }
-        return result;
+        return false;
     }
 }
